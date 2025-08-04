@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class ="hero">
+  <h1>Collins Rotich</h1>
+  <h2>Data Scientist and AI Developer</h2>
+</section>
+
+<section class="projects-carousel">
+  <h3>Featured Projects</h3>
+  <div class="carousel-wrapper">
+    <div class="carousel-track">
+      <div class="carousel-slide">
+        <img src="{{ url_for('static', filename='img/stock_prediction.png.png') }}" alt="Stock Price Predictor"">
+        <p>Stock Predictor</p>
+      </div>
+      <div class="carousel-slide">
+        <img src="{{ url_for('static', filename='img/covid_dashboard.png.jpg') }}" alt="COVID Dashboard">
+        <p>COVID Dashboard</p>
+      </div>
+      <div class="carousel-slide">
+        <img src="{{ url_for('static', filename='img/sentiment_analysis.png.jpg') }}" alt="Sentiment Analyzer">
+        <p>Sentiment Analyzer</p>
+      </div>
+      <div class="carousel-slide">
+        <img src="{{ url_for('static', filename='img/image_classifier.png.png') }}" alt="Image Classifier">
+        <p>Image Classifier</p>
+      </div>
+      <!-- Duplicates for loop -->
+      <div class="carousel-slide">
+        <img src="{{ url_for('static', filename='img/stock_prediction.png.png') }}" alt="Stock Price Predictor"">
+        <p>Stock Predictor</p>
+      </div>
+      <div class="carousel-slide">
+        <img src="{{ url_for('static', filename='img/covid_dashboard.png.jpg') }}" alt="COVID Dashboard">
+        <p>COVID Dashboard</p>
+      </div>
+      <div class="carousel-slide">
+        <img src="{{ url_for('static', filename='img/image_classifier.png.png') }}" alt="Image Classifier">
+        <p>Image Classifier</p>
+      </div>
+      <div class="carousel-slide">
+        <img src="{{ url_for('static', filename='img/sentiment_analysis.png.jpg') }}" alt="Sentiment Analyzer">
+        <p>Sentiment Analyzer</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="contact">
+  <h3>Get In Touch</h3>
+  <p>You can reach me for project collaborations, questions, or consulting opportunities.</p>
+  <p>Email: <a href="mailto:collinskipkoech1@gmail.com">collinskipkoech1@gmail.com</a></p>
+</section>
+
+<footer>
+  <p>&copy; 2025 Collins Rotich. All rights reserved.</p>
+</footer>
+
+
+{% endblock %}

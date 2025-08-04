@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% block title %}Projects - Collins Rotich{% endblock %}
+{% block content %}
+<section class="projects-page">
+  <h3>My Projects</h3>
+  <div class="grid">
+    
+    <div class="project-card">
+      <img src="{{ url_for('static', filename='img/stock_prediction.png.png') }}" alt="Stock Price Predictor">
+      <div class="card-body">
+        <h4>Stock Price Predictor</h4>
+        <p>Predict future stock prices based on historical data using linear regression.</p>
+        <div class="card-links">
+          <a href="#" class="demo-btn">Live Demo</a>
+          <a href="#" class="code-btn">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="{{ url_for('static', filename='img/covid_dashboard.png.jpg') }}" alt="COVID Dashboard">
+      <div class="card-body">
+        <h4>COVID-19 Dashboard</h4>
+        <p>Interactive dashboard visualizing global COVID trends with Plotly and Flask.</p>
+        <div class="card-links">
+          <a href="#" class="demo-btn">Live Demo</a>
+          <a href="#" class="code-btn">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="{{ url_for('static', filename='img/sentiment_analysis.png.jpg') }}" alt="Sentiment Analyzer">
+      <div class="card-body">
+        <h4>Sentiment Analyzer</h4>
+        <p>Real-time sentiment classification of user input using NLP and Scikit-learn.</p>
+        <div class="card-links">
+          <a href="#" class="demo-btn">Live Demo</a>
+          <a href="#" class="code-btn">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="{{ url_for('static', filename='img/image_classifier.png.png') }}" alt="Image Classifier">
+      <div class="card-body">
+        <h4>Image Classifier</h4>
+        <p>Classifies images into categories using a CNN model and Flask interface.</p>
+        <div class="card-links">
+          <a href="#" class="demo-btn">Live Demo</a>
+          <a href="#" class="code-btn">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+{% endblock %}
